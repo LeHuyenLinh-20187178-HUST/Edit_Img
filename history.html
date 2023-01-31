@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <html lang="en">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/history.css" />
+    <title>History</title>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 85%;
+        }
+
+        td,
+        th {
+            border: 1px solid #565353;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #565353;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container1">
+        <div class="container2 flex-col">
+            <div class="navigation flex-sb">
+                <a href="homepage.html" class="nav-btn">Home</a>
+                <a href="filter.html" class="nav-btn">Edit</a>
+                <a href="history.html" class="nav-btn">History</a>
+                <a onclick="logout(event)" class="nav-btn"><button style="border-radius: 5px">Logout</button></a>
+            </div>
+            <h1 style="margin: 15px;">History Table</h1>
+            <h3>History Login</h2>
+                <div class="history-container">
+                    <table id="login">  
+                        <tr>
+                            <th>Username</th>
+                            <th>Password</th>
+                        </tr>
+                        
+                    </table>
+                </div>
+                    <h3>History Logout</h3>
+                    <div class="history-container">
+                        <table id="logout">
+                        <tr>
+                            <th>Username</th>
+                            <th>Password</th>
+                        </tr>
+                       
+                    </table>
+                </div>
+               
+        </div>
+    </div>
+    <script src="/history.js"></script>
+</body>
+
+</html>
